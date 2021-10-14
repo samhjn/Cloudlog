@@ -1,3 +1,7 @@
+<footer class="d-print-none">
+<p><?php echo $this->config->item("app_name")?> currently powered by <a href="https://github.com/magicbug/Cloudlog" target="_blank">Cloudlog</a>
+<p><a href="https://beian.miit.gov.cn" target="_blank"><?php echo $this->config->item("ICP")?></a></p>
+</footer>
 <!-- General JS Files used across Cloudlog -->
 <script src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/popper.min.js"></script>

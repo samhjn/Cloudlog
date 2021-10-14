@@ -20,7 +20,9 @@
 		<?php } ?>
 </div>
 
+<div class="container">
 	<div id="gridsquare_map" style="width: 100%; height: 800px"></div>
+</div>
 
 <div class="container">
 	<?php if ($this->uri->segment(2) == "satellites") { ?>

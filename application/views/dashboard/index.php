@@ -21,7 +21,9 @@
 </div>
 
 <!-- Map -->
-<div id="map" style="width: 100%; height: 350px"></div>
+<div class="container">
+  <div id="map" style="width: 100%; height: 350px"></div>
+</div>
 
 <div style="padding-top: 0px; margin-top: 5px;" class="container dashboard">
 

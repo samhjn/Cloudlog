@@ -248,3 +248,21 @@ color: #ffffff;
 	max-height: calc(100vh - 200px);
 	overflow-y: auto;
 }
+
+footer {
+    padding: 1rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+    margin-top: auto;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
