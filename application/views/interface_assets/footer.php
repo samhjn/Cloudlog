@@ -685,6 +685,7 @@ $(document).on('keypress',function(e) {
   var mymap = L.map('qsomap').setView([51.505, -0.09], 13);
 
   L.tileLayer('<?php echo $this->optionslib->get_option('map_tile_server');?>', {
+    minZoom: 1,
     maxZoom: 18,
     attribution: '<?php echo $this->optionslib->get_option('map_tile_server_copyright');?>',
     id: 'mapbox.streets'
@@ -979,6 +980,7 @@ $(document).on('keypress',function(e) {
   var mymap = L.map('map').setView([lat,long], 5);
 
   L.tileLayer('<?php echo $this->optionslib->get_option('map_tile_server');?>', {
+    minZoom: 1,
     maxZoom: 18,
     attribution: '<?php echo $this->optionslib->get_option('map_tile_server_copyright');?>',
     id: 'mapbox.streets'
@@ -1029,6 +1031,7 @@ $(document).ready(function(){
 <script>
 
   var layer = L.tileLayer('<?php echo $this->optionslib->get_option('map_tile_server');?>', {
+    minZoom: 1,
     maxZoom: 18,
     attribution: '<?php echo $this->optionslib->get_option('map_tile_server_copyright');?>',
     id: 'mapbox.streets'
@@ -1188,6 +1191,7 @@ $(document).ready(function(){
 							var mymap = L.map('mapqso').setView([lat,long], 5);
 
 							L.tileLayer('<?php echo $this->optionslib->get_option('map_tile_server');?>', {
+								minZoom: 1,
 								maxZoom: 18,
 								attribution: '<?php echo $this->optionslib->get_option('map_tile_server_copyright');?>',
 								id: 'mapbox.streets'
