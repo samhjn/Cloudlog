@@ -22,8 +22,8 @@ function initmap(ShowGrid = 'No') {
     map = new L.Map('map');
 
     // create the tile layer with correct attribution
-    var osmUrl='//webrd01.is.autonavi.com/appmaptile?lang=en&size=1&scale=1&style=8&x={x}&y={y}&z={z}';
-    var osmAttrib='Map data © <a href="https://amap.com" target="_blank">Amap</a>';
+    var osmUrl='//webrd01.is.autonavi.com/appmaptile?lang=zh_en&size=1&scale=1&style=8&x={x}&y={y}&z={z}';
+    var osmAttrib='Map data © <a href="https://amap.com" target="_blank">Amap</a> GS(2021)6375号';
     var osm = new L.TileLayer(osmUrl, {minZoom: 1, maxZoom: 9, attribution: osmAttrib});        
 
     // start the map in South-East England
