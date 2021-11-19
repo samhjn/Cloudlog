@@ -48,6 +48,8 @@ $lang['general_word_qslcard_via'] = 'Via';
 $lang['general_edit_qso'] = 'Edit QSO';
 $lang['general_mark_qsl_rx_bureau'] = 'Mark QSL Received (Bureau)';
 $lang['general_mark_qsl_rx_direct'] = 'Mark QSL Received (Direct)';
+$lang['general_mark_qsl_tx_bureau'] = 'Mark QSL Sent (Bureau)';
+$lang['general_mark_qsl_tx_direct'] = 'Mark QSL Sent (Direct)';
 
 $lang['general_delete_qso'] = 'Delete QSO';
 
@@ -96,6 +98,7 @@ $lang['gen_hamradio_state'] = 'State';
 $lang['gen_hamradio_iota'] = 'IOTA';
 $lang['gen_hamradio_sota'] = 'SOTA';
 $lang['gen_hamradio_gridsquare'] = 'Gridsquare';
+$lang['gen_hamradio_operator'] = 'Operator';
 
 $lang['gen_hamradio_sig'] = 'Sig';
 $lang['gen_hamradio_sig_info'] = 'Sig Info';
