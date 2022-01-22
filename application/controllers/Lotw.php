@@ -927,17 +927,79 @@ class Lotw extends CI_Controller {
 				if ($submode == "FT4") {
 					return "FT4";
 					break;
-				} elseif ($submode == "JS8") {
-						return "JS8";
-						break;
 				} elseif ($submode == "FST4") {
-						return "FST4";
-						break;
+					return "FST4";
+					break;
+				} elseif ($submode == "MFSK16") {
+					return "MFSK16";
+					break;
+				} elseif ($submode == "MFSK8") {
+					return "MFSK8";
+					break;
 				} elseif ($submode == "Q65") {
-						return "Q65";
-						break;
+					return "Q65";
+					break;
 				} else {
-					return "MFSK";
+					return "DATA";
+					break;
+				}
+			case "PSK":
+				if ($submode == "PSK31") {
+					return "PSK31";
+					break;
+				} elseif ($submode == "PSK63") {
+					return "PSK63";
+					break;
+				} elseif ($submode == "BPSK125") {
+					return "PSK125";
+					break;
+				} elseif ($submode == "BPSK31") {
+					return "PSK31";
+					break;
+				} elseif ($submode == "BPSK63") {
+					return "PSK63";
+					break;
+				} elseif ($submode == "FSK31") {
+					return "FSK31";
+					break;
+				} elseif ($submode == "PSK10") {
+					return "PSK10";
+					break;
+				} elseif ($submode == "PSK125") {
+					return "PSK125";
+					break;
+				} elseif ($submode == "PSK500") {
+					return "PSK500";
+					break;
+				} elseif ($submode == "PSK63F") {
+					return "PSK63F";
+					break;
+				} elseif ($submode == "PSKAM10") {
+					return "PSKAM";
+					break;
+				} elseif ($submode == "PSKAM31") {
+					return "PSKAM";
+					break;
+				} elseif ($submode == "PSKAM50") {
+					return "PSKAM";
+					break;
+				} elseif ($submode == "PSKFEC31") {
+					return "PSKFEC31";
+					break;
+				} elseif ($submode == "QPSK125") {
+					return "PSK125";
+					break;
+				} elseif ($submode == "QPSK31") {
+					return "PSK31";
+					break;
+				} elseif ($submode == "QPSK63") {
+					return "PSK63";
+					break;
+				} elseif ($submode == "PSK2K") {
+					return "PSK2K";
+					break;
+				} else {
+					return "DATA";
 					break;
 				}
 			default:

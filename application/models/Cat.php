@@ -9,7 +9,12 @@
 		}
 
 		function update($result) {
-		
+			if ($result['timestamp'] != "") {
+				$timestamp = $result['timestamp'];
+			} else {
+				$timestamp = date("Y-m-d H:i:s");
+			}
+
 			$this->db->where('radio', $result['radio']); 
 			$query = $this->db->get('cat');
 			
@@ -41,7 +46,7 @@
 						$data = array(
 						'frequency' => $result['frequency'],
 						'mode' => $result['mode'],
-						'timestamp' => $result['timestamp'],
+						'timestamp' => $timestamp,
 						);
 
 						$this->db->where('id', $radio_id);
@@ -67,7 +72,7 @@
 						'radio' => $result['radio'],
 						'frequency' => $result['frequency'],
 						'mode' => $result['mode'],
-						'timestamp' => $result['timestamp'],
+						'timestamp' => $timestamp,
 					);
 				}
 
@@ -85,7 +90,7 @@
 		}
 
 		function recent_status() {
-			$this->db->where("timestamp > date_sub(now(), interval 15 minute)", NULL, FALSE);
+			$this->db->where("timestamp > date_sub(UTC_TIMESTAMP(), interval 15 minute)", NULL, FALSE);
 
 			$query = $this->db->get('cat');
 			return $query;
